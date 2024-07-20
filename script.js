@@ -48,12 +48,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   thumbnails.forEach((thumbnail) => {
     thumbnail.addEventListener("click", function () {
-      const activeThumbnail = document.querySelector(".thumbnail.active");
-      if (activeThumbnail) {
-        activeThumbnail.classList.remove("active");
-      }
-      this.classList.add("active");
       currentPhoto.src = this.src;
+
+      thumbnails.forEach((thumb) => thumb.classList.remove("active"));
+      this.classList.add("active");
     });
   });
 });

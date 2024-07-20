@@ -355,7 +355,8 @@ footer {
 }
 
 .main-photo {
-  width: 680px;
+  width: 100%;
+  max-width: 600px;
   height: 400px;
   overflow: hidden;
   border-radius: 0.5rem;
@@ -371,6 +372,8 @@ footer {
 .thumbnails {
   display: flex;
   gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .thumbnails .thumbnail {
@@ -385,4 +388,30 @@ footer {
 .thumbnails .thumbnail.active {
   border: 2px solid #0410b9;
   opacity: 1;
+}
+
+/* Media query para tablets */
+@media (max-width: 768px) {
+  .main-photo {
+    max-width: 100%;
+    height: 300px;
+  }
+
+  .thumbnails .thumbnail {
+    width: 80px;
+    height: 60px;
+  }
+}
+
+/* Media query para smartphones */
+@media (max-width: 480px) {
+  .main-photo {
+    max-width: 100%;
+    height: 200px;
+  }
+
+  .thumbnails .thumbnail {
+    width: 60px;
+    height: 45px;
+  }
 }
