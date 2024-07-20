@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escola Palo Freire</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-logo">
+        <img src="images/logo.jpeg" alt="" />
+        <div>
+          <h1>Escola Paulo Freire</h1>
+          <p>Ensino interativo: Plataforma de materiais didáticos</p>
+        </div>
+      </div>
+      <div class="menu-icon" id="menu-icon">&#9776;</div>
+      <nav>
+        <ul id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#" data-page="pages/eventos.html">Eventos</a></li>
+          <li>
+            <a href="#" data-page="pages/informacoes.html">Informações</a>
+          </li>
+          <li><a href="#" data-page="pages/downloads.html">Biblioteca</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Matérias</a>
+            <div class="dropdown-content">
+              <a href="#" data-page="pages/materia-matematica.html"
+                >Matemática</a
+              >
+              <a href="#" data-page="pages/materia-portugues.html">Português</a>
+              <a href="#" data-page="pages/materia-geografia.html">Geografia</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="content">
+      <section id="home">
+        <h2>Bem-vindo à Escola Paulo Freire</h2>
+        <p>
+          Nossa escola oferece um ambiente de aprendizado acolhedor e
+          motivador...
+        </p>
+      </section>
+
+      <section id="fotos">
+        <h3>Fotos da Escola</h3>
+        <div class="slider">
+          <div class="main-photo">
+            <img
+              src="images/frente-escola.jpg"
+              alt="frente da escola"
+              id="current-photo"
+            />
+          </div>
+          <div class="thumbnails">
+            <img
+              src="images/frente-escola.jpg"
+              alt=""
+              class="thumbnail active"
+            />
+            <img src="images/padrao.jpg" alt="" class="thumbnail" />
+            <img src="images/padrao.jpg" alt="" class="thumbnail" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <address>
+          <p>R. Lira Tavares, 87</p>
+          <p>Bairro: Santo Antônio</p>
+          <p>Telefone: 91919919191919</p>
+        </address>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
